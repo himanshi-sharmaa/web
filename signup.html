@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>create account</title>
+		<link rel="stylesheet" type="text/css" href="css/stylecreateacc.css">
+		<script type="text/javascript">
+			function matchpassword(){
+				var firstpassword= document.f1.pass.value;
+				var secondpassword=document.f1.confirmPass.value;
+                
+                var namecheck=document.f1.name.value;
+                var emailcheck=document.f1.email.value;
+                var gendercheck=document.f1.gender.value;
+                var addresscheck=documet.f1.address.value;
+
+                var regEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if((namecheck=="")||(/^[A-Za-z\s]+$/.test(namecheck)==false)){
+                	alert("Name cannot be empty");
+                	return false;
+                }else if(firstpassword==""){
+                	alert("Password cannot be empty");
+                	return false;
+                }else if(secondpassword==""){
+                	alert("Confirm password cannot be empty");
+                	return false;
+                }
+                else if(firstpassword!=secondpassword){
+					alert("Password must be same");
+					return false;
+				}
+		        else if(emailcheck==""){
+		        	alert("Email cannot be empty");
+		        	return false;
+		        }
+		        else if(regEmail.test(emailcheck)==false){
+                   alert("Invalid email address");
+                   return false;
+		        }
+		        else if(gendercheck==""){
+		        	alert("Gender cannot be empty");
+		        	return false;
+		        }
+		        else if(addresscheck==""){
+		        	alert("Address cannot be empty");
+		        	return false;
+		        }
+				return true;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<center>
+		<div class="container">
+			<center><h1>Legacy</h1><center>
+			<div class="take_info">
+				<form action="dbConnectivity.php" method="POST" name="f1" onsubmit="return matchpassword()">
+					<table align="center">
+						<tr>
+							<td>Name:</td>
+							<td>
+								<input type="text" name="name">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Password:</td>
+							<td>
+								<input type="password" name="pass">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Confirm Password:</td>
+							<td>
+								<input type="password" name="confirmPass">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Email:</td>
+							<td>
+								<input type="text" name="email">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>Gender:</td>
+							<td>
+								<input type="radio" name="gender" value="male" checked> Male
+								
+								<input type="radio" name="gender" value="female"> Female
+								
+								<input type="radio" name="gender" value="other"> Other
+							</td>
+						</tr>
+						
+						<tr>
+							<td>DOB</td>
+							<td>
+								<input type="Date" name="date" value="date">
+							</td>
+						</tr>
+							<tr>
+							<td>Address</td>
+							<td>
+								<input type="text" name="address">
+							</td>
+						</tr>
+					</table>
+				
+			        <input type="submit" value="Sign up" name="submit" id="sub">
+				</form>
+			</div>
+		</div>
+	</center>
+	</body>
+
+</html>
