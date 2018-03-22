@@ -1,0 +1,32 @@
+body{
+  background-image: url("../img/best.jpg");
+  background-size: cover; 
+}
+
+.container{
+	opacity:0.8;
+	background:white;
+	color:#581705;
+	width:600px;
+	margin-top:150px;
+	box-shadow:10px 10px 10px #581705;
+}
+
+.take_info td{
+	color: #581705;
+	font-family: sans-serif;
+	padding: 5px;
+	font-weight: bold;
+	font-size:20px;
+}
+
+#sub{
+	background: #581705;
+	color: white;
+	padding:10px;
+	font-family:sans-serif;
+	font-size:20px;
+	margin-top:10px;
+	width:200px;
+	border-radius:20px;
+}
