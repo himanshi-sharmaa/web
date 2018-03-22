@@ -1,0 +1,137 @@
+.body{
+	margin:0 auto;
+}
+.first{
+	height:120px;
+}
+.head{
+  float:left;
+  color: #8F200E;
+  font-weight: 50;
+  font-size: 40px;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-left: 30px;
+
+}
+.logo{
+  float: right;
+  height: 120px;
+  width: 200px;
+  margin-right: 50px;
+}
+.list{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 30px;
+    background-color: #AE2500;
+	color: white;
+	padding: 4px;
+}
+.list ul{
+	list-style-type: none;
+}
+.list ul li{
+
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	display: inline;
+}
+.list ul li:hover{
+	color: #ccc;
+}
+.imgleft{
+  width: 50%;
+  float: left;
+  height: 400px;
+}
+.imgright{
+ width: 50%;	
+ float: right;
+ height: 400px;
+}
+.main{
+	background: #C24A26;
+	color: white;
+	display: inline;
+}
+.one{
+	float: left;
+ 	width: 33%;
+}
+.one h3{
+  margin-left: 50px;
+}
+.two{
+	float: left;
+ 	width: 33%;
+}
+.two h3{
+  margin-left: 50px;  
+}
+.three{
+	float: left;
+ 	width: 33%;
+}
+.three h3{
+ margin-left: 50px;
+}
+.one ul li{
+   padding: 5px;
+  list-style-type: none;
+  font-weight: 20px;
+  font-size: 20px;
+ 
+}
+.three ul li{
+  padding: 5px;
+  list-style-type: none;
+  font-weight: 20px;
+  font-size: 20px;
+}
+.two ul li{
+   padding: 5px;
+  list-style-type: none;
+  font-weight: 20px;
+  font-size: 20px;
+}
+.one ul li:hover{
+   color: #ccc;
+}
+.two ul li:hover{
+   color: #ccc;
+}
+.three ul li:hover{
+  color: #ccc;
+}
+.foot{
+
+  margin: 0 auto;
+  background:#8F200E;
+  color: white;
+  font-weight: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+.body1{
+  background-image: url("../img/gift.jpg");
+  width: 100%;
+  height: 1000px;
+}
+.quote{
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 50px;
+  color: black;
+  text-align: center;
+  padding-top: 600px;
+}
+.text{
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 50px;
+  color: black;
+  text-align: center;	
+}
